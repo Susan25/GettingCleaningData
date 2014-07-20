@@ -69,4 +69,5 @@ nam <-names(OrderedSummary)
 names(OrderedSummary) <- ifelse(nam %in% c('Subject', 'Activity'), 
               str_c(nam, ''),  str_c('Avg ', nam))
 
-write.table("./HumanActivityRecognitionTidy")
+write.table(OrderedSummary,"tidy_data.txt",sep="\t")
+

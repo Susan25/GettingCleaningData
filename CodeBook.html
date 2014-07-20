@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+
+<title>Codebook for Human Activity Recognition Tidy dataset</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+
+
+
+
+</head>
+
+<body>
+<h3>Codebook for Human Activity Recognition Tidy dataset</h3>
+
+<h3>Introduction:</h3>
+
+<p>This data contains a summarization of the Human Activity Recognition Using Smartphones Data Set, available from:</p>
+
+<p><a href="http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones">http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones</a></p>
+
+<p>The experiment was conducted by Jorge L. Reyes-Ortiz, et. al.,  (<a href="mailto:activityrecognition@smartlab.ws">activityrecognition@smartlab.ws</a>). A description of the experiment as described in their data set is summarized below: </p>
+
+<p>The original data was the result of an experiment carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING UPSTAIRS, WALKING DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, 3-axial linear accleration and 3-axial angular velocity were captured at a constant rate of 50 Hz. </p>
+
+<p>The features selected from the original dataset come from accelerometer and gyroscope 3-axial raw signals. The time domain signals (prefixed by &ldquo;Time&rdquo;) were captured at a constant rate of 50 Hz. They were then filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. The acceleration signals were separated into body and gravity acceleration signals(Time Body Accelerator XYZ and Time Gravity Accelerator XYZ) using anotherlow pass Butterworth filter with a corner frequency of 0.3 Hz.</p>
+
+<p>The body linear accleration and angular velocity were derived in time to obtain Jerk signals (Time Body Acceleration Jerk XYZ and Time Body Gyro Jerk XYZ). Also, the magnitude of these three-dimensional signals were calculated using the Euclidean norm (Time Body Acceleration Mag, Time Gravity Accleration Mag, Time Body Acceleration Jerk Mag, Time Body Gyro Mag, Time Body Gyro Jerk Mag).</p>
+
+<p>A Fast Fourier Transform (FFT) was applied to some of these signals producing the variables prefixed by &ldquo;Freq&rdquo;.</p>
+
+<p>The original data sets were segmented into training and testing files. Additionally, information about the subject (subject number) and activity (activity number) were separated.</p>
+
+<p>Using these original data sets, the training and Testing data was combined into one data set. A subset of the measurements was obtained by extracting only the mean and standard deviation measuremetns. The resulting data was then summarized by averaging by study participant and activity undertaken during the experiment. The resulting data can be found in this repo in the R data frame &ldquo;HumanActivityRecognition_Tidy&rdquo;. See the README for more information.</p>
+
+<h3>Data Dictionary</h3>
+
+<p>Subject</p>
+
+<p>integer 1 - 30
+Contains the subject number of the study participant</p>
+
+<p>Activity</p>
+
+<p>Character String
+Describes the type of activity the subject was participating in when the measurment was collected.
+Values are:</p>
+
+<p>WALKING
+WALKING_UPSTAIRS
+WALKING_DOWNSTAIRS
+SITTING
+STANDING
+LAYING</p>
+
+<p>Fields 3 - 68 contain average values summed by Subject and Activity from the original dataset. All values are floating point.</p>
+
+<p>AvgTimeBodyAccelerationmeanX 
+Numeric floating point
+The average of the data points collected for the Subject&#39;s Average Body Acceleration in the X directionfor the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeBody AccelerationmeanY 
+Numeric floating point
+The average of the data points collected for the Subject&#39;s Average Body Acceleration in the Y directionfor the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeBodyAccelerationmeanZ<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s Average Body Acceleration in the Z directionfor the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeBodyAccelerationstdX<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s Standard Deviation of the Body Acceleration in the X direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeBodyAccelerationstdY<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s Standard Deviation of the Body Acceleration in the Y direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeBodyAccelerationstdZ<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s Standard Deviation of the Body Acceleration in the Z direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeGravityAcclerationmeanX 
+Numeric floating point
+The average of the data points collected for the Subject&#39;s average Gravity Acceleration in the X direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeGravityAcclerationmeanY 
+Numeric floating point
+The average of the data points collected for the Subject&#39;s average Gravity Acceleration in the Y direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeGravityAccelerationmeanZ<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s Average Gravity Acceleration in the Z directionfor the Activity denoted by the Activity field.  </p>
+
+<p>AvgTimeGravityAccelerationstdX<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s standard deviation of the Gravity Acceleration in the X directionfor the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeGravityAccelerationstdY<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s Standard Deviation of the Gravity Acceleration in the Y direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeGravityAccelerationstdZ<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s Standard Deviation of the Gravity Acceleration in the Z direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeBodyAccelerationJerkmeanX<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s average Body Acceleration Jerk in the X direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeBodyAccelerationJerkmeanY<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s average Body Acceleration Jerk in the Y direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeBodyAccelerationJerkmeanZ<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s average Body Acceleration Jerk in the Z direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeBodyAccelerationJerkstdX<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s standard deviation of the Body Acceleration Jerk in the X direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeBodyAccelerationJerkstdY<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s standard deviation of the Body Acceleration Jerk in the Y direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeBodyAccelerationJerkstdZ<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s standard deviation of the Body Acceleration Jerk in the Z direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeBodyGyromeanX<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s average Body Gyro in the X direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeBodyGyromeanY<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s average Body Gyro in the Y direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeBodyGyromeanZ<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s average Body Gyro in the Z direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeBodyGyrostdX<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s standard deviation of the Body Gyro in the X direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeBodyGyrostdY<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s standard deviation of the Body Gyro in the Y direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeBodyGyrostdZ<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s standard deviation of the Body Gyro in the Z direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeBodyGyroJerkmeanX<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s average Body Gyro Jerk in the X direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeBodyGyroJerkmeanY<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s average Body Gyro Jerk in the Y direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeBodyGyroJerkmeanZ<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s average Body Gyro Jerk in the Z direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeBodyGyroJerkstdX<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s standard deviation of the Body Gyro Jerk in the X direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeBodyGyroJerkstdY<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s standard deviation of the Body Gyro Jerk in the Y direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeBodyGyroJerkstdZ<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s standard deviation of the Body Acceleration Jerk in the Z direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeBodyAccelerationMagmean<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s average Body Acceleration Magnitude for the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeBodyAccelerationMagstd<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s standard deviation of the Body Acceleration Magnitude for the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeGravityAccelerationMagmean<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s average Gravity Acceleration Magnitude in the X direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeGravityAccelerationMagstd<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s standard deviation of the Gravity Acceleration Magnitude for the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeBodyAccelerationJerkMagmean<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s average Body Acceleration Jerk Magnitude for the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeBodyAccelerationJerkMagstd<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s standard deviation of the Body Acceleration Jerk Magnitude for the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeBodyGyroMagmean<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s average Body Gyro Magnitude for the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeBodyGyroMagstd<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s standard deviation of the Body Gyro Magnitude for the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeBodyGyroJerkMagmean<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s average Body Gyro Jerk Magnitude for the Activity denoted by the Activity field.</p>
+
+<p>AvgTimeBodyGyroJerkMagstd<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s standard deviation of the Body Gyro Jerk Magnitude for the Activity denoted by the Activity field.</p>
+
+<p>AvgFreqBodyAccelerationmeanX<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s average Frequency Body Acceleration in the X direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgFreqBodyAccelerationmeanY<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s average Frequency Body Acceleration in the Y direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgFreqBodyAccelerationmeanZ<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s average Frequency Body Acceleration in the Z direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgFreqBodyAccelerationstdX<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s standard deviation of the Frequency Body Acceleration in the X direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgFreqBodyAccelerationstdY<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s standard deviation of the Frequency Body Acceleration in the X direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgFreqBodyAccelerationstdZ<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s standard deviation of the Frequency Body Acceleration in the Z direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgFreqBodyAccelerationJerkmeanX<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s average Frequency Body Acceleration Jerk in the X direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgFreqBodyAccelerationJerkmeanY<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s average Frequency Body Acceleration Jerk in the Y direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgFreqBodyAccelerationJerkmeanZ<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s average Frequency Body Acceleration Jerk in the Z direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgFreqBodyAccelerationJerkstdX<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s standard deviation of the Frequency Body Acceleration Jerk in the X direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgFreqBodyAccelerationJerkstdY<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s standard deviation of the Frequency Body Acceleration Jerk in the Y direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgFreqBodyAccelerationJerkstdZ<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s standard deviation of the Frequency Body Acceleration Jerk in the Z direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgFreqBodyGyromeanX<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s average Frequency Body Gyro in the X direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgFreqBodyGyromeanY<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s average Frequency Body Gyro in the Y direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgFreqBodyGyromeanZ<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s average Frequency Body Gyro in the Z direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgFreqBodyGyrostdX<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s standard deviation of the Frequency Body Gyro in the X direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgFreqBodyGyrostdY<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s standard deviation of the Frequency Body Gyro in the Y direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgFreqBodyGyrostdZ<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s standard deviation of the Frequency Body Gyro in the Z direction for the Activity denoted by the Activity field.</p>
+
+<p>AvgFreqBodyAccelerationMagmean<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s average Frequency Body Acceleration Magnitude for the Activity denoted by the Activity field.</p>
+
+<p>AvgFreqBodyAccelerationMagstd<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s standard deviation of the Frequency Body Acceleration Magnitude for the Activity denoted by the Activity field.</p>
+
+<p>AvgFreqBodyBodyAccelerationJerkMagmean 
+Numeric floating point
+The average of the data points collected for the Subject&#39;s average Frequency Body Body Acceleration Jerk Magnitude for the Activity denoted by the Activity field.</p>
+
+<p>AvgFreqBodyBodyAccelerationJerkMagstd<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s standard deviation of the Frequency Body Body Acceleration Jerk Magnitude for the Activity denoted by the Activity field.</p>
+
+<p>AvgFreqBodyBodyGyroMagmean<br/>
+Numeric floating point
+The average of the data points collected for the Subject&#39;s average Frequency Body Body Gyro Magnitude for the Activity denoted by the Activity field.</p>
+
+<p>AvgFreqBodyBodyGyroMagstd 
+Numeric floating point
+The average of the data points collected for the Subject&#39;s standard deviation of the Frequency Body Body Gyro Magnitude for the Activity denoted by the Activity field.</p>
+
+<p>AvgFreqBodyBodyGyroJerkMagmean
+Numeric floating point
+The average of the data points collected for the Subject&#39;s average Frequency Body Body Gyro Jerk Magnitude for the Activity denoted by the Activity field.</p>
+
+<p>AvgFreqBodyBodyGyroJerkMagstd
+Numeric floating point
+The average of the data points collected for the Subject&#39;s standard deviation of the Frequency Body Body Gyro Jerk Magnitude for the Activity denoted by the Activity field.</p>
+
+<h3>References:</h3>
+
+<p>[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012</p>
+
+<p>[2] Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
+Smartlab - Non Linear Complex Systems Laboratory
+DITEN - UniversitÃ  degli Studi di Genova, Genoa I-16145, Italy.
+activityrecognition &#39;@&#39; smartlab.ws
+<a href="http://www.smartlab.ws">www.smartlab.ws</a> </p>
+
+</body>
+
+</html>
+

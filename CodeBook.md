@@ -27,12 +27,12 @@ Using these original data sets, the training and Testing data was combined into 
 
 ### Data Dictionary
 
-1. Subject
+Subject
 
 integer 1 - 30
 Contains the subject number of the study participant
 
-2. Activity
+Activity
 
 Character String
 Describes the type of activity the subject was participating in when the measurment was collected.
@@ -47,266 +47,267 @@ LAYING
 
 Fields 3 - 68 contain average values summed by Subject and Activity from the original dataset. All values are floating point.
 
-3. Avg Time Body Acceleration mean X 
+AvgTimeBodyAccelerationmeanX 
 Numeric floating point
 The average of the data points collected for the Subject's Average Body Acceleration in the X directionfor the Activity denoted by the Activity field.
 
-4. Avg Time Body Acceleration mean Y 
+AvgTimeBody AccelerationmeanY 
 Numeric floating point
 The average of the data points collected for the Subject's Average Body Acceleration in the Y directionfor the Activity denoted by the Activity field.
 
-5. Avg Time Body Acceleration mean Z    
+AvgTimeBodyAccelerationmeanZ    
 Numeric floating point
 The average of the data points collected for the Subject's Average Body Acceleration in the Z directionfor the Activity denoted by the Activity field.
 
-6. Avg Time Body Acceleration std X              
+AvgTimeBodyAccelerationstdX              
 Numeric floating point
 The average of the data points collected for the Subject's Standard Deviation of the Body Acceleration in the X direction for the Activity denoted by the Activity field.
 
-7. Avg Time Body Acceleration std Y  
+AvgTimeBodyAccelerationstdY  
 Numeric floating point
 The average of the data points collected for the Subject's Standard Deviation of the Body Acceleration in the Y direction for the Activity denoted by the Activity field.
 
-8. Avg Time Body Acceleration std Z           
+AvgTimeBodyAccelerationstdZ           
 Numeric floating point
 The average of the data points collected for the Subject's Standard Deviation of the Body Acceleration in the Z direction for the Activity denoted by the Activity field.
         
-9. Avg Time Gravity Accleration mean X 
+AvgTimeGravityAcclerationmeanX 
 Numeric floating point
 The average of the data points collected for the Subject's average Gravity Acceleration in the X direction for the Activity denoted by the Activity field.
 
-10. Avg Time Gravity Accleration mean Y 
+AvgTimeGravityAcclerationmeanY 
 Numeric floating point
 The average of the data points collected for the Subject's average Gravity Acceleration in the Y direction for the Activity denoted by the Activity field.
 
-11. Avg Time Gravity Acceleration mean Z           
+AvgTimeGravityAccelerationmeanZ           
 Numeric floating point
 The average of the data points collected for the Subject's Average Gravity Acceleration in the Z directionfor the Activity denoted by the Activity field.  
 
-12 Avg Time Gravity Acceleration std X            
+AvgTimeGravityAccelerationstdX            
 Numeric floating point
 The average of the data points collected for the Subject's standard deviation of the Gravity Acceleration in the X directionfor the Activity denoted by the Activity field.
 
-13. Avg Time Gravity Acceleration std Y  
+AvgTimeGravityAccelerationstdY  
 Numeric floating point
 The average of the data points collected for the Subject's Standard Deviation of the Gravity Acceleration in the Y direction for the Activity denoted by the Activity field.
 
-14. Avg Time Gravity Acceleration std Z         
+AvgTimeGravityAccelerationstdZ         
 Numeric floating point
 The average of the data points collected for the Subject's Standard Deviation of the Gravity Acceleration in the Z direction for the Activity denoted by the Activity field.
 
-15. Avg Time Body Acceleration Jerk mean X        
+AvgTimeBodyAccelerationJerkmeanX        
 Numeric floating point
 The average of the data points collected for the Subject's average Body Acceleration Jerk in the X direction for the Activity denoted by the Activity field.
 
-16. Avg Time Body Acceleration Jerk mean Y        
+AvgTimeBodyAccelerationJerkmeanY        
 Numeric floating point
 The average of the data points collected for the Subject's average Body Acceleration Jerk in the Y direction for the Activity denoted by the Activity field.
 
-17. Avg Time Body Acceleration Jerk mean Z        
+AvgTimeBodyAccelerationJerkmeanZ        
 Numeric floating point
 The average of the data points collected for the Subject's average Body Acceleration Jerk in the Z direction for the Activity denoted by the Activity field.
 
-18. Avg Time Body Acceleration Jerk std X         
+AvgTimeBodyAccelerationJerkstdX         
 Numeric floating point
 The average of the data points collected for the Subject's standard deviation of the Body Acceleration Jerk in the X direction for the Activity denoted by the Activity field.
 
-19. Avg Time Body Acceleration Jerk std Y         
+AvgTimeBodyAccelerationJerkstdY         
 Numeric floating point
 The average of the data points collected for the Subject's standard deviation of the Body Acceleration Jerk in the Y direction for the Activity denoted by the Activity field.
 
-20. Avg Time Body Acceleration Jerk std Z         
+AvgTimeBodyAccelerationJerkstdZ         
 Numeric floating point
 The average of the data points collected for the Subject's standard deviation of the Body Acceleration Jerk in the Z direction for the Activity denoted by the Activity field.
 
-21. Avg Time Body Gyro mean X                     
+AvgTimeBodyGyromeanX                     
 Numeric floating point
 The average of the data points collected for the Subject's average Body Gyro in the X direction for the Activity denoted by the Activity field.
 
-22. Avg Time Body Gyro mean Y                   
+AvgTimeBodyGyromeanY                   
 Numeric floating point
 The average of the data points collected for the Subject's average Body Gyro in the Y direction for the Activity denoted by the Activity field.
 
-23. Avg Time Body Gyro mean Z                     
+AvgTimeBodyGyromeanZ                     
 Numeric floating point
 The average of the data points collected for the Subject's average Body Gyro in the Z direction for the Activity denoted by the Activity field.
 
-24. Avg Time Body Gyro std X                      
+AvgTimeBodyGyrostdX                      
 Numeric floating point
 The average of the data points collected for the Subject's standard deviation of the Body Gyro in the X direction for the Activity denoted by the Activity field.
 
-25. Avg Time Body Gyro std Y                      
+AvgTimeBodyGyrostdY                      
 Numeric floating point
 The average of the data points collected for the Subject's standard deviation of the Body Gyro in the Y direction for the Activity denoted by the Activity field.
 
-26.Avg Time Body Gyro std Z               
+AvgTimeBodyGyrostdZ               
 Numeric floating point
 The average of the data points collected for the Subject's standard deviation of the Body Gyro in the Z direction for the Activity denoted by the Activity field.
 
-27. Avg Time Body Gyro Jerk mean X                
+AvgTimeBodyGyroJerkmeanX                
 Numeric floating point
 The average of the data points collected for the Subject's average Body Gyro Jerk in the X direction for the Activity denoted by the Activity field.
 
-28. Avg Time Body Gyro Jerk mean Y                
+AvgTimeBodyGyroJerkmeanY                
 Numeric floating point
 The average of the data points collected for the Subject's average Body Gyro Jerk in the Y direction for the Activity denoted by the Activity field.
 
-29. Avg Time Body Gyro Jerk mean Z                
+AvgTimeBodyGyroJerkmeanZ                
 Numeric floating point
 The average of the data points collected for the Subject's average Body Gyro Jerk in the Z direction for the Activity denoted by the Activity field.
 
-30. Avg Time Body Gyro Jerk std X                 
+AvgTimeBodyGyroJerkstdX                 
 Numeric floating point
 The average of the data points collected for the Subject's standard deviation of the Body Gyro Jerk in the X direction for the Activity denoted by the Activity field.
 
-31. Avg Time Body Gyro Jerk std Y                 
+AvgTimeBodyGyroJerkstdY                 
 Numeric floating point
 The average of the data points collected for the Subject's standard deviation of the Body Gyro Jerk in the Y direction for the Activity denoted by the Activity field.
 
-32. Avg Time Body Gyro Jerk std Z            
+AvgTimeBodyGyroJerkstdZ            
 Numeric floating point
 The average of the data points collected for the Subject's standard deviation of the Body Acceleration Jerk in the Z direction for the Activity denoted by the Activity field.
 
-33. Avg Time Body Acceleration Mag mean           
+AvgTimeBodyAccelerationMagmean           
 Numeric floating point
 The average of the data points collected for the Subject's average Body Acceleration Magnitude for the Activity denoted by the Activity field.
-34. Avg Time Body Acceleration Mag std         
+
+AvgTimeBodyAccelerationMagstd         
 Numeric floating point
 The average of the data points collected for the Subject's standard deviation of the Body Acceleration Magnitude for the Activity denoted by the Activity field.
 
-35. Avg Time Gravity Acceleration Mag mean        
+AvgTimeGravityAccelerationMagmean        
 Numeric floating point
 The average of the data points collected for the Subject's average Gravity Acceleration Magnitude in the X direction for the Activity denoted by the Activity field.
 
-36. Avg Time Gravity Acceleration Mag std        
+AvgTimeGravityAccelerationMagstd        
 Numeric floating point
 The average of the data points collected for the Subject's standard deviation of the Gravity Acceleration Magnitude for the Activity denoted by the Activity field.
 
-37. Avg Time Body Acceleration Jerk Mag mean   
+AvgTimeBodyAccelerationJerkMagmean   
 Numeric floating point
 The average of the data points collected for the Subject's average Body Acceleration Jerk Magnitude for the Activity denoted by the Activity field.
 
-38. Avg Time Body Acceleration Jerk Mag std       
+AvgTimeBodyAccelerationJerkMagstd       
 Numeric floating point
 The average of the data points collected for the Subject's standard deviation of the Body Acceleration Jerk Magnitude for the Activity denoted by the Activity field.
 
-39. Avg Time Body Gyro Mag mean                   
+AvgTimeBodyGyroMagmean                   
 Numeric floating point
 The average of the data points collected for the Subject's average Body Gyro Magnitude for the Activity denoted by the Activity field.
 
-40. Avg Time Body Gyro Mag std               
+AvgTimeBodyGyroMagstd               
 Numeric floating point
 The average of the data points collected for the Subject's standard deviation of the Body Gyro Magnitude for the Activity denoted by the Activity field.
 
-41. Avg Time Body Gyro Jerk Mag mean              
+AvgTimeBodyGyroJerkMagmean              
 Numeric floating point
 The average of the data points collected for the Subject's average Body Gyro Jerk Magnitude for the Activity denoted by the Activity field.
 
-42. Avg Time Body Gyro Jerk Mag std              
+AvgTimeBodyGyroJerkMagstd              
 Numeric floating point
 The average of the data points collected for the Subject's standard deviation of the Body Gyro Jerk Magnitude for the Activity denoted by the Activity field.
 
-43. Avg Freq Body Acceleration mean X             
+AvgFreqBodyAccelerationmeanX             
 Numeric floating point
 The average of the data points collected for the Subject's average Frequency Body Acceleration in the X direction for the Activity denoted by the Activity field.
 
-44. Avg Freq Body Acceleration mean Y             
+AvgFreqBodyAccelerationmeanY             
 Numeric floating point
 The average of the data points collected for the Subject's average Frequency Body Acceleration in the Y direction for the Activity denoted by the Activity field.
 
-45. Avg Freq Body Acceleration mean Z             
+AvgFreqBodyAccelerationmeanZ             
 Numeric floating point
 The average of the data points collected for the Subject's average Frequency Body Acceleration in the Z direction for the Activity denoted by the Activity field.
 
-46. Avg Freq Body Acceleration std X              
+AvgFreqBodyAccelerationstdX              
 Numeric floating point
 The average of the data points collected for the Subject's standard deviation of the Frequency Body Acceleration in the X direction for the Activity denoted by the Activity field.
 
-47. Avg Freq Body Acceleration std Y              
+AvgFreqBodyAccelerationstdY              
 Numeric floating point
 The average of the data points collected for the Subject's standard deviation of the Frequency Body Acceleration in the X direction for the Activity denoted by the Activity field.
 
-48. Avg Freq Body Acceleration std Z         
+AvgFreqBodyAccelerationstdZ         
 Numeric floating point
 The average of the data points collected for the Subject's standard deviation of the Frequency Body Acceleration in the Z direction for the Activity denoted by the Activity field.
 
-49. Avg Freq Body Acceleration Jerk mean X        
+AvgFreqBodyAccelerationJerkmeanX        
 Numeric floating point
 The average of the data points collected for the Subject's average Frequency Body Acceleration Jerk in the X direction for the Activity denoted by the Activity field.
 
-50. Avg Freq Body Acceleration Jerk mean Y        
+AvgFreqBodyAccelerationJerkmeanY        
 Numeric floating point
 The average of the data points collected for the Subject's average Frequency Body Acceleration Jerk in the Y direction for the Activity denoted by the Activity field.
 
-51. Avg Freq Body Acceleration Jerk mean Z        
+AvgFreqBodyAccelerationJerkmeanZ        
 Numeric floating point
 The average of the data points collected for the Subject's average Frequency Body Acceleration Jerk in the Z direction for the Activity denoted by the Activity field.
 
-52. Avg Freq Body Acceleration Jerk std X         
+AvgFreqBodyAccelerationJerkstdX         
 Numeric floating point
 The average of the data points collected for the Subject's standard deviation of the Frequency Body Acceleration Jerk in the X direction for the Activity denoted by the Activity field.
 
-53. Avg Freq Body Acceleration Jerk std Y        
+AvgFreqBodyAccelerationJerkstdY        
 Numeric floating point
 The average of the data points collected for the Subject's standard deviation of the Frequency Body Acceleration Jerk in the Y direction for the Activity denoted by the Activity field.
 
-54. Avg Freq Body Acceleration Jerk std Z         
+AvgFreqBodyAccelerationJerkstdZ         
 Numeric floating point
 The average of the data points collected for the Subject's standard deviation of the Frequency Body Acceleration Jerk in the Z direction for the Activity denoted by the Activity field.
 
-55. Avg Freq Body Gyro mean X                     
+AvgFreqBodyGyromeanX                     
 Numeric floating point
 The average of the data points collected for the Subject's average Frequency Body Gyro in the X direction for the Activity denoted by the Activity field.
 
-56. Avg Freq Body Gyro mean Y                     
+AvgFreqBodyGyromeanY                     
 Numeric floating point
 The average of the data points collected for the Subject's average Frequency Body Gyro in the Y direction for the Activity denoted by the Activity field.
-57. Avg Freq Body Gyro mean Z                     
 
+AvgFreqBodyGyromeanZ                     
 Numeric floating point
 The average of the data points collected for the Subject's average Frequency Body Gyro in the Z direction for the Activity denoted by the Activity field.
 
-58. Avg Freq Body Gyro std X                      
+AvgFreqBodyGyrostdX                      
 Numeric floating point
 The average of the data points collected for the Subject's standard deviation of the Frequency Body Gyro in the X direction for the Activity denoted by the Activity field.
 
-59. Avg Freq Body Gyro std Y                      
+AvgFreqBodyGyrostdY                      
 Numeric floating point
 The average of the data points collected for the Subject's standard deviation of the Frequency Body Gyro in the Y direction for the Activity denoted by the Activity field.
 
-60. Avg Freq Body Gyro std Z                      
+AvgFreqBodyGyrostdZ                      
 Numeric floating point
 The average of the data points collected for the Subject's standard deviation of the Frequency Body Gyro in the Z direction for the Activity denoted by the Activity field.
 
-61. Avg Freq Body Acceleration Mag mean          
+AvgFreqBodyAccelerationMagmean          
 Numeric floating point
 The average of the data points collected for the Subject's average Frequency Body Acceleration Magnitude for the Activity denoted by the Activity field.
 
-62. Avg Freq Body Acceleration Mag std  
+AvgFreqBodyAccelerationMagstd  
 Numeric floating point
 The average of the data points collected for the Subject's standard deviation of the Frequency Body Acceleration Magnitude for the Activity denoted by the Activity field.
 
-63. Avg Freq Body Body Acceleration Jerk Mag mean 
+AvgFreqBodyBodyAccelerationJerkMagmean 
 Numeric floating point
 The average of the data points collected for the Subject's average Frequency Body Body Acceleration Jerk Magnitude for the Activity denoted by the Activity field.
 
-64. Avg Freq Body Body Acceleration Jerk Mag std  
+AvgFreqBodyBodyAccelerationJerkMagstd  
 Numeric floating point
 The average of the data points collected for the Subject's standard deviation of the Frequency Body Body Acceleration Jerk Magnitude for the Activity denoted by the Activity field.
 
-65. Avg Freq Body Body Gyro Mag mean             
+AvgFreqBodyBodyGyroMagmean             
 Numeric floating point
 The average of the data points collected for the Subject's average Frequency Body Body Gyro Magnitude for the Activity denoted by the Activity field.
 
-66. Avg Freq Body Body Gyro Mag std 
+AvgFreqBodyBodyGyroMagstd 
 Numeric floating point
 The average of the data points collected for the Subject's standard deviation of the Frequency Body Body Gyro Magnitude for the Activity denoted by the Activity field.
 
-67. Avg Freq Body Body Gyro Jerk Mag mean
+AvgFreqBodyBodyGyroJerkMagmean
 Numeric floating point
 The average of the data points collected for the Subject's average Frequency Body Body Gyro Jerk Magnitude for the Activity denoted by the Activity field.
 
-68. Avg Freq Body Body Gyro Jerk Mag std
+AvgFreqBodyBodyGyroJerkMagstd
 Numeric floating point
 The average of the data points collected for the Subject's standard deviation of the Frequency Body Body Gyro Jerk Magnitude for the Activity denoted by the Activity field.
 

@@ -19,14 +19,20 @@ README.txt - this file
 
 CodeBook.md -  describes the structure of the data and the variables in the combined dataset
 
-run_analysis.R - R script that processed the original data set. This code 
+labels.txt  -  contains the column labels for the tidy data - needs to be in the local directory
+
+run_analysis.R - R script that processed the original data set. This code: 
   - reads in the original training and testing file,
-  - subsets the files to only extract the mean and standard deviation measurements
-  - combines these files into a single data frame and adds descriptive column labels 
+  - subsets the files to only extract the mean and standard deviation measurement
+  - combines these files into a single data frame
+  - reads in labels.txt, a text file that contains all of the labels for the output tidy data set
+  - adds descriptive column labels 
   - converts the Activity categorical variable to text values rather than numbers 
   - sorts the data by Subject and Activity 
   - calculates the mean of each of the measurement variables 
-  - creates a data frame as output - HumanActivityRecognitionTidy - that contains the summarized data
+  - creates a tab delimited file as output - tidydata.txt - that contains the summarized data
+  
+  tidydata.txt - the output data file (text format, tab delimited)
 
 ### References:
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012

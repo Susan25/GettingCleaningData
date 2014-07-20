@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+
+<title>README for Human Activity Recognition Tidy dataset</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+
+
+
+
+</head>
+
+<body>
+<h3>README for Human Activity Recognition Tidy dataset</h3>
+
+<h3>Introduction:</h3>
+
+<p>This data contains a summarization of the Human Activity Recognition Using Smartphones Data Set, available from:</p>
+
+<p><a href="http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones">http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones</a></p>
+
+<p>The original data was the result of an experiment carried out with a group of 30 volunteers within an age bracket of 19-48 years. </p>
+
+<p>The original data set contained separate files for training and testing. Additionally, the files were segmented with individual files containing the Subject number (from 1 to 30) and the Activity type (coded 1-6 in the original files, which denoted the activities monitored: &ldquo;WALKING&rdquo;, &ldquo;WALKING UPSTAIRS&rdquo;, &ldquo;wALKING DOWNSTAIRS&rdquo;, &ldquo;SITTING&rdquo;, &ldquo;STANDING&rdquo;, &ldquo;LAYING&rdquo;). Training and Testing data was combined into one data set and a subset of the original data was extracted which contained only the mean and standard deviation measurements. The resulting data was summarized by study participant and activity undertaken during the experiment and the average value of each measurement was calculated. The resulting data can be found in this repo in the R data frame &ldquo;HumanActivityRecognition_Tidy&rdquo;. </p>
+
+<h3>Files:</h3>
+
+<p>This dataset contains the following files:
+README.txt - this file</p>
+
+<p>CodeBook.md -  describes the structure of the data and the variables in the combined dataset</p>
+
+<p>labels.txt  -  contains the column labels for the tidy data - needs to be in the local directory</p>
+
+<p>run_analysis.R - R script that processed the original data set. This code: </p>
+
+<ul>
+<li>reads in the original training and testing file,</li>
+<li>subsets the files to only extract the mean and standard deviation measurement</li>
+<li>combines these files into a single data frame</li>
+<li>reads in labels.txt, a text file that contains all of the labels for the output tidy data set</li>
+<li>adds descriptive column labels </li>
+<li>converts the Activity categorical variable to text values rather than numbers </li>
+<li>sorts the data by Subject and Activity </li>
+<li>calculates the mean of each of the measurement variables </li>
+<li>creates a tab delimited file as output - tidydata.txt - that contains the summarized data</li>
+</ul>
+
+<h3>References:</h3>
+
+<p>[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012</p>
+
+<p>[2] Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
+Smartlab - Non Linear Complex Systems Laboratory
+DITEN - UniversitÃ  degli Studi di Genova, Genoa I-16145, Italy.
+activityrecognition &#39;@&#39; smartlab.ws
+<a href="http://www.smartlab.ws">www.smartlab.ws</a> </p>
+
+</body>
+
+</html>
+
